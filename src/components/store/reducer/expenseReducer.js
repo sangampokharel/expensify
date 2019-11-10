@@ -1,4 +1,11 @@
-const initState = [];
+const initState = [
+  {
+    id: new Date(),
+    description: '',
+    createAt: 0,
+    amount: 0
+  }
+];
 
 export const expenseReducer = (state = initState, action) => {
   switch (action.type) {

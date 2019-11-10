@@ -21,8 +21,8 @@ export class App extends Component {
     //   })
     // );
 
-    store.dispatch(setTextFilter('january'));
-    console.log(store.getState());
+    store.dispatch(setTextFilter('january '));
+    // console.log(store.getState());
   }
 
   render() {
@@ -31,7 +31,7 @@ export class App extends Component {
         <BrowserRouter>
           <Navbar />
           <Switch>
-            <Route path='/dashboard' component={ExpenseDashboard} />
+            <Route path='/' exact component={ExpenseDashboard} />
             <Route path='/create' component={AddExpensePage} />
             <Route path='/edit/:id' component={EditExpensePage} />
             <Route path='/help' component={HelpPage} />

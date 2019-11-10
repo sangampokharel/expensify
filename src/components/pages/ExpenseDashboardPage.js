@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-
+import ExpenseList from '../ExpenseList';
 export class ExpenseDashboardPage extends Component {
   render() {
-    return <div>ExpenseDashboardPage</div>;
+    return (
+      <div>
+        <ExpenseList />
+      </div>
+    );
   }
 }
 
